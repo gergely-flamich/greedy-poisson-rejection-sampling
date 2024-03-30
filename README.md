@@ -1,3 +1,5 @@
+**🚧 Note 🚧 :** This repo is still under construction.
+
 # Greedy Poisson Rejection Sampling
 
 This repository contains experimental data and reference implementations of the relative entropy coding algorithms that were used in the paper
@@ -75,9 +77,29 @@ Please cit the paper if you find it useful in your research:
 ```
 
 # Requirements
+We provide our code as a Python 3 package written in [JAX](https://jax.readthedocs.io/en/latest/), alongside with some Jupyter notebooks.
 
-=
+To run the code, first clone the repo and install the package:
+```bash
+pip install --upgrade pip
+pip install -e .
+``` 
 
 # Structure and Contents of the Repository
 
-The repository contains 
+## Data
+
+The data used to create the plots in Figures 1 and 2 can be found at:
+
+```
+.
++-- data
+   +-- figure1
+   |   +-- points.csv
+   |   +-- stretched_density_ratio.csv
+   +-- figure2
+       +-- global_gprs_and_a_star.csv
+       +-- gprs_and_a_star.csv
+       +-- gprs_and_a_star_runtime_vs_inf_div.csv
+```
+
